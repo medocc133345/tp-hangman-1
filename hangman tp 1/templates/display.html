@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Informations Utilisateur</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/promo">Promo</a></li>
+            <li><a href="/user/form">Formulaire</a></li>
+            <li><a href="/user/list">Liste des utilisateurs</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Vos informations</h1>
+        <ul>
+            <li><strong>Nom:</strong> {{.LastName}}</li>
+            <li><strong>Prénom:</strong> {{.FirstName}}</li>
+            <li><strong>Date de naissance:</strong> {{.BirthDate}}</li>
+            <li><strong>Sexe:</strong> {{.Gender}}</li>
+        </ul>
+    </div>
+</body>
+</html>

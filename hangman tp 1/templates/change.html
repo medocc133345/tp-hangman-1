@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Change</title>
+</head>
+<body class="{{if .IsEven}}even{{else}}odd{{end}}">
+    <h1>Le nombre de vues est {{if .IsEven}}pair{{else}}impair{{end}} : {{.Counter}}</h1>
+</body>
+</html>

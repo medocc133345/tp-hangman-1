@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire Utilisateur</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/promo">Promo</a></li>
+            <li><a href="/user/form">Formulaire</a></li>
+            <li><a href="/user/list">Liste des utilisateurs</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Renseignez vos informations</h1>
+        <form action="/user/treatment" method="post">
+            <label>Nom: <input type="text" name="lastname" required></label>
+            <label>Prénom: <input type="text" name="firstname" required></label>
+            <label>Date de naissance: <input type="date" name="birthdate" required></label>
+            <label>Sexe:
+                <select name="gender">
+                    <option value="masculin">Masculin</option>
+                    <option value="feminin">Féminin</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </label>
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+</body>
+</html>
