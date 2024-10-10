@@ -26,5 +26,5 @@ L'objectif de ce projet est de pratiquer la programmation web en Golang, notamme
 
 5. **Menu de navigation**  
    Un menu de navigation présent sur toutes les pages permet de naviguer facilement entre les différentes sections de l'application.
-## Structure du projet
+
 
