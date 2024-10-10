@@ -28,22 +28,3 @@ L'objectif de ce projet est de pratiquer la programmation web en Golang, notamme
    Un menu de navigation présent sur toutes les pages permet de naviguer facilement entre les différentes sections de l'application.
 ## Structure du projet
 
-Voici la structure des fichiers de l'application :
-
-
-## Installation
-
-### Prérequis
-
-Avant de lancer le projet, assurez-vous d'avoir installé :
-- [Golang](https://golang.org/dl/) version 1.16 ou supérieure
-- [Git](https://git-scm.com/) pour cloner le projet
-
-### Instructions
-
-1. **Cloner le projet**  
-   Ouvre un terminal et exécute la commande suivante pour cloner le projet depuis GitHub :
-   ```bash
-   git clone 
-   cd tp_golang_web
-
