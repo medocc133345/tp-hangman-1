@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label, select, input, button {
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.hangman-image {
+    margin-top: 20px;
+}
+
+.hangman-image img {
+    width: 150px;
+}
+
+.game-info {
+    margin-bottom: 20px;
+}
+
+.message {
+    color: #d9534f;
+}
+
+.lives, .tried-letters, .word {
+    margin-bottom: 10px;
+}
+
+.gameover-options a {
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.gameover-options a:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vérification - Jeu du Pendu</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue dans le Jeu du Pendu</h1>
+        <form action="/verify" method="POST">
+            <label for="answer">Quel système d'exploitation utilise Mac?</label>
+            <input type="text" id="answer" name="answer" required>
+            <button type="submit">Vérifier</button>
+        </form>
+        {{ if .Error }}
+        <p style="color:red;">{{ .Error }}</p>
+        {{ end }}
+    </div>
+</body>
+</html>

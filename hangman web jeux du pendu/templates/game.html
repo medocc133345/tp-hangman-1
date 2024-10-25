@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman - Jeu</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jeu du Pendu</h1>
+        <div class="game-info">
+            <div class="word">
+                <p>Mot à deviner : {{.WordToGuess}}</p>
+            </div>
+            <div class="lives">
+                <p>Vies restantes : {{.LivesLeft}}</p>
+            </div>
+            <div class="tried-letters">
+                <p>Lettres essayées : {{.GuessedLetters}}</p>
+            </div>
+            <div class="message">
+                <p>{{.Message}}</p>
+            </div>
+        </div>
+        
+        <form action="/game" method="POST">
+            <label for="guess">Devinez une lettre ou un mot :</label>
+            <input type="text" id="guess" name="guess" maxlength="1" required>
+            <button type="submit">Soumettre</button>
+        </form>
+
+        <div class="hangman-image">
+            <img src="/static/images/hangman{{.LivesLeft}}.png" alt="Image du pendu">
+        </div>
+    </div>
+</body>
+</html>
+

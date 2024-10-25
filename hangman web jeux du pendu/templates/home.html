@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu du Pendu - Accueil</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Bienvenue au jeu du pendu !</h1>
+    <form action="/start" method="POST">
+        <label for="pseudo">Pseudo :</label>
+        <input type="text" name="pseudo" required>
+        <label for="difficulty">Niveau de difficulté :</label>
+        <select name="difficulty">
+            <option value="easy">Facile</option>
+            <option value="medium">Moyen</option>
+            <option value="hard">Difficile</option>
+        </select>
+        <button type="submit">Commencer une partie</button>
+    </form>
+</body>
+</html>

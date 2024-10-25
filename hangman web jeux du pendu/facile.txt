@@ -1,0 +1,10 @@
+chat
+chien
+souris
+voiture
+banane
+maison
+pomme
+lune
+tigre
+livre
